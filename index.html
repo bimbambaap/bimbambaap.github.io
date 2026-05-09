@@ -9,7 +9,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="theme-color" content="#YOUR_BG_COLOR">
+<meta name="theme-color" content="#0c0c14">
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@400;500;600&display=swap');
 
@@ -229,6 +229,7 @@ body::before {
   align-items: center;
   margin-bottom: 22px;
   transition: opacity 0.18s ease, transform 0.18s ease;
+  z-index: 9999;
 }
 
 .cat-counter {
@@ -237,7 +238,7 @@ body::before {
 
 .btn-next {
   width: 100%;
-  padding: 32px;
+  padding: 16px;
   background: linear-gradient(135deg, #4fffb0 0%, #00d98a 100%);
   border: none;
   border-radius: 16px;
@@ -279,7 +280,7 @@ body::before {
   pointer-events: none;
   transform: scale(0);
   animation: rippleAnim 0.5s ease-out forwards;
-  z-index: 999;
+  z-index: 99999;
 }
 @keyframes rippleAnim {
   to { transform: scale(6); opacity: 0; }
