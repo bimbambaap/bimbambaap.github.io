@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- v1 -->
 <html lang="nl">
 <head>
 <meta charset="UTF-8">
@@ -62,6 +63,7 @@ body::before {
     radial-gradient(ellipse 50% 40% at 85% 100%, rgba(96,195,255,0.10) 0%, transparent 55%),
     radial-gradient(ellipse 40% 30% at 50% 50%, rgba(79,255,176,0.05) 0%, transparent 60%);
   pointer-events: none;
+  background-attachment: fixed; /* zorgt dat gradient niet herhaalt */
   z-index: 0;
 }
 
