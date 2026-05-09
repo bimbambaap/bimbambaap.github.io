@@ -327,15 +327,18 @@ body::before {
 </div>
 
 <script>
-async function readWordsFromUrl(url) {
-  const response = await fetch(url);
-  const text = await response.text();
-  return text
+const xhr = new XMLHttpRequest();
+xhr.open('GET', 'bimbambaap.github.io/categorieen.txt', false); // false = synchroon
+xhr.send();
+
+if (xhr.status !== 200) {
+  throw new Error(`Fout bij ophalen: ${xhr.status}`);
+}
+
+var CATEGORIES = xhr.responseText
     .split('\n')
     .map(word => word.trim())
     .filter(word => word.length > 0);
-}
-var CATEGORIES = await readWordsFromUrl('bimbambaap.github.io/categorieen.txt');
 var LETTERS = 'ABCDEFGHIJKLMNOPRSTV';
 var usedCats = [];
 var letterHidden = false;
