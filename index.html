@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- v6 -->
+<!-- v7 -->
 <html lang="nl">
 <head>
 <meta charset="UTF-8">
@@ -36,6 +36,10 @@ body {
 html {
   height: 100%;
   height: 100dvh;
+  background: var(--bg);
+}
+
+html::before {
   background:
     radial-gradient(ellipse 70% 50% at 15% 0%, rgba(192,132,252,0.13) 0%, transparent 55%),
     radial-gradient(ellipse 50% 40% at 85% 100%, rgba(96,195,255,0.10) 0%, transparent 55%),
@@ -48,11 +52,11 @@ body {
   height: 100%;
   height: 100dvh;
   /* background: var(--bg); */
-  background:
+  /* background:
     radial-gradient(ellipse 70% 50% at 15% 0%, rgba(192,132,252,0.13) 0%, transparent 55%),
     radial-gradient(ellipse 50% 40% at 85% 100%, rgba(96,195,255,0.10) 0%, transparent 55%),
     radial-gradient(ellipse 40% 30% at 50% 50%, rgba(79,255,176,0.05) 0%, transparent 60%); 
-  background-attachment: fixed;
+  background-attachment: fixed; */
   overflow: hidden;
   font-family: 'DM Sans', sans-serif;
   color: var(--text);
@@ -71,10 +75,10 @@ body::before {
   content: '';
   position: fixed;
   inset: 0;
-  background:
+  /* background:
     radial-gradient(ellipse 70% 50% at 15% 0%, rgba(192,132,252,0.13) 0%, transparent 55%),
     radial-gradient(ellipse 50% 40% at 85% 100%, rgba(96,195,255,0.10) 0%, transparent 55%),
-    radial-gradient(ellipse 40% 30% at 50% 50%, rgba(79,255,176,0.05) 0%, transparent 60%); 
+    radial-gradient(ellipse 40% 30% at 50% 50%, rgba(79,255,176,0.05) 0%, transparent 60%);  */
   pointer-events: none;
   background-attachment: fixed; /* zorgt dat gradient niet herhaalt
   min-height: 100vh;
