@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- v7 -->
+<!-- v8 -->
 <html lang="nl">
 <head>
 <meta charset="UTF-8">
@@ -359,15 +359,11 @@ var letterHidden = false;
 var busy = false;
 
 function randCategory() {
-  while (usedCats.length >= 20) {
-    usedCats.shift();
-    console.log("shift");
-  }
+  while (usedCats.length >= 20) usedCats.shift();
   var available = CATEGORIES.filter(function(c) { return usedCats.indexOf(c) === -1; });
   var pick = available[Math.floor(Math.random() * available.length)];
   usedCats.push(pick);
   localStorage.setItem('usedCats', JSON.stringify(usedCats));
-  console.log(JSON.parse(localStorage.getItem('usedCats')) || []);
   return pick;
 }
 
