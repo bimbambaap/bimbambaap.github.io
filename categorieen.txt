@@ -4,7 +4,7 @@ Drugs
 Iets uit de geschiedenis
 Landen
 Steden
-Vruchten
+Fruit
 Flora
 Fauna
 Groenten
@@ -52,7 +52,6 @@ Iets in de tuin
 Auto-onderdelen
 Iets uit een vliegtuig
 Wintersport
-Tropisch fruit
 Dingen in een museum
 Dieren uit Afrika
 Dingen van hout
