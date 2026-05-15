@@ -359,7 +359,7 @@ var letterHidden = false;
 var busy = false;
 
 function randCategory() {
-  if (usedCats.length >= (2*CATEGORIES.length/3)) {
+  if (usedCats.length >= 20) {
     usedCats.shift();
     console.log("clear");
   }
