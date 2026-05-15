@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- v6 -->
+<!-- v7 -->
 <html lang="nl">
 <head>
 <meta charset="UTF-8">
@@ -359,11 +359,15 @@ var letterHidden = false;
 var busy = false;
 
 function randCategory() {
-  if (usedCats.length >= (2*CATEGORIES.length/3)) usedCats.shift();
+  if (usedCats.length >= (2*CATEGORIES.length/3)) {
+    usedCats.shift();
+    console.log("clear");
+  }
   var available = CATEGORIES.filter(function(c) { return usedCats.indexOf(c) === -1; });
   var pick = available[Math.floor(Math.random() * available.length)];
   usedCats.push(pick);
   localStorage.setItem('usedCats', JSON.stringify(usedCats));
+  console.log(JSON.parse(localStorage.getItem('usedCats')) || []);
   return pick;
 }
 
