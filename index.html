@@ -359,9 +359,9 @@ var letterHidden = false;
 var busy = false;
 
 function randCategory() {
-  if (usedCats.length >= 20) {
+  while (usedCats.length >= 20) {
     usedCats.shift();
-    console.log("clear");
+    console.log("shift");
   }
   var available = CATEGORIES.filter(function(c) { return usedCats.indexOf(c) === -1; });
   var pick = available[Math.floor(Math.random() * available.length)];
