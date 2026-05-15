@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- v5 -->
+<!-- v6 -->
 <html lang="nl">
 <head>
 <meta charset="UTF-8">
@@ -353,16 +353,17 @@ var CATEGORIES = xhr.responseText
     .split('\n')
     .map(word => word.trim())
     .filter(word => word.length > 0);
-var LETTERS = 'ABCDEFGHIJKLMNOPRSTV';
-var usedCats = [];
+var LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+var usedCats = JSON.parse(localStorage.getItem('usedCats')) || [];
 var letterHidden = false;
 var busy = false;
 
 function randCategory() {
-  if (usedCats.length >= CATEGORIES.length) usedCats = [];
+  if (usedCats.length >= (2*CATEGORIES.length/3)) usedCats.shift();
   var available = CATEGORIES.filter(function(c) { return usedCats.indexOf(c) === -1; });
   var pick = available[Math.floor(Math.random() * available.length)];
   usedCats.push(pick);
+  localStorage.setItem('usedCats', JSON.stringify(usedCats));
   return pick;
 }
 

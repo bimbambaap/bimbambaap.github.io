@@ -6,58 +6,53 @@ Landen
 Steden
 Vruchten
 Flora
+Fauna
 Groenten
 Beroepen
 Meubels
-Kleuren
 Muziekinstrumenten
-Sportsoorten
+Sporten
 Films
 Acteurs
-Zangers / Bands
+Artiesten
 Automerken
-Voetbalclubs
-Dingen in de keuken
-Dingen op het strand
-Dieren in zee
-Beroemde Nederlanders
+Sportclubs
+Iets in de keuken
+Iets op het strand
+Zeedieren
+BN'ers
 Cartoon figuren
 Supermarkten
 Kledingstukken
-Lichaamsdelen
-Dingen in de badkamer
+Organen
+Iets in de badkamer
 Snacks
-Dranken
-Desserts
+Drinken
+Toetjes
 Fastfood ketens
-Computerspellen
-Sociale media apps
+Games
+Social media 
 Beroemde gebouwen
 Insecten
 Vogels
-Reptielensoorten
 Bomen
 Bloemen
-Planetennamen
-Dingen in de ruimte
+Iets in de ruimte
 Schoolvakken
-Dingen in een rugzak
+Iets in je portemonee
 Dieren op de boerderij
 Hobby's
-Dingen op een verjaardag
-Regen gerelateerde dingen
+Iets op een verjaardag
 Dingen die rood zijn
 Dingen die groot zijn
-Dingen in een ziekenhuis
+Iets in een ziekenhuis
 Stripfiguren
 Sprookjesfiguren
-Dingen in de tuin
-Dingen in een auto
-Dingen in een vliegtuig
-Dansen
-Sporten op water
+Iets in de tuin
+Auto-onderdelen
+Iets uit een vliegtuig
 Wintersport
 Tropisch fruit
 Dingen in een museum
-Dieren in Afrika
+Dieren uit Afrika
 Dingen van hout
